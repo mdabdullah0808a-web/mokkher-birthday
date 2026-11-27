@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Mokkher</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+background:radial-gradient(circle at top,#33250a,#050505 70%);
+color:#f5d477;
+font-family:Georgia,serif;
+text-align:center;
+min-height:100vh;
+overflow-x:hidden;
+}
+
+.container{padding:35px 18px;position:relative;z-index:2}
+
+.top{
+letter-spacing:4px;
+font-size:12px;
+color:#fff0bc;
+margin-top:20px;
+}
+
+h1{
+font-size:clamp(38px,10vw,65px);
+margin:22px 0;
+color:#ffdc82;
+text-shadow:0 0 15px gold,0 0 35px #b8860b;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+to{text-shadow:0 0 35px gold,0 0 60px #d49b27}
+}
+
+.subtitle{line-height:1.8;color:#fff0c5}
+
+.cake-area{perspective:900px;margin:45px auto}
+.cake{
+font-size:120px;
+display:inline-block;
+filter:drop-shadow(0 0 20px gold);
+animation:rotate 3s infinite ease-in-out;
+}
+
+@keyframes rotate{
+0%,100%{transform:rotateY(-20deg) translateY(0)}
+50%{transform:rotateY(20deg) translateY(-18px)}
+}
+
+.card{
+max-width:600px;
+margin:30px auto;
+padding:27px 20px;
+border:1px solid #c69b36;
+border-radius:20px;
+background:linear-gradient(145deg,#211a0b,#090909);
+box-shadow:0 0 25px #8c681c55,inset 0 0 20px #d6a63716;
+}
+
+.card h2{margin-bottom:20px;color:#ffdc83}
+
+.message{
+font-size:16px;
+line-height:1.9;
+color:#fff2cf;
+}
+
+.message p{margin:16px 0}
+
+.line{
+height:2px;width:90px;
+background:gold;margin:20px auto;
+box-shadow:0 0 12px gold;
+}
+
+button{
+border:1px solid #ffe09a;
+border-radius:30px;
+background:linear-gradient(135deg,#f8d36c,#9e6b13);
+color:#160f02;
+padding:14px 25px;
+font-size:16px;
+font-weight:bold;
+margin:20px 0;
+cursor:pointer;
+}
+
+#surprise{
+display:none;
+font-size:18px;
+line-height:1.9;
+color:#ffe5a0;
+margin-top:20px;
+animation:show 1.5s ease;
+}
+
+@keyframes show{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.balloon{
+position:fixed;
+bottom:-100px;
+z-index:1;
+font-size:32px;
+pointer-events:none;
+animation:float 7s linear forwards;
+}
+
+@keyframes float{
+to{transform:translateY(-115vh) rotate(30deg);opacity:0}
+}
+
+.spark{
+position:fixed;
+width:5px;height:5px;
+border-radius:50%;
+background:gold;
+box-shadow:0 0 12px gold;
+pointer-events:none;
+animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+0%,100%{opacity:0}
+50%{opacity:1;transform:scale(1.7)}
+}
+
+.footer{padding:30px 10px;color:#c9a85c}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top">✨ A SPECIAL DAY FOR A SPECIAL PERSON ✨</div>
+
+<h1>HAPPY BIRTHDAY</h1>
+<h1>MOKKHER</h1>
+
+<div class="subtitle">
+Aaj ka din tumhare naam! ❤️<br>
+May your life shine like GOLD.
+</div>
+
+<div class="cake-area">
+<div class="cake">🎂</div>
+</div>
+
+<div class="line"></div>
+
+<div class="card">
+<h2>🌟 Birthday Wishes 🌟</h2>
+
+<div class="message">
+<p>Janamdin ki bahut bahut badhai ho Mokkher! Tumhari zindagi khushiyon aur kamyabi se bhari rahe.</p>
+
+<p>Zindagi mein kabhi haar mat maanna, kyunki haar ke baad hi jeet ki asli keemat samajh aati hai.</p>
+
+<p>Apne sapno ko itna bada banao ki ek din tumhari pehchaan tumhari mehnat se ho.</p>
+
+<p>Waqt badalta hai, halaat badalte hain, lekin jo insaan mehnat karna nahi chhodta, uski kismat zaroor badalti hai.</p>
+
+<p>Hamesha apne maa-baap ka naam roshan karna aur zindagi mein ek achha insaan banna.</p>
+</div>
+</div>
+
+<div class="card">
+<h2>👑 Your Bright Future 👑</h2>
+
+<div class="message">
+<p>Bade sapne dekho, unke liye mehnat karo aur kabhi apne aap par bharosa khona mat.</p>
+
+<p>Ek din tum zaroor apni manzil tak pahunchoge. Bas rukna mat, jhukna mat aur haar maanna mat.</p>
+
+<p>Success unhi ko milti hai jo mushkilon ke saamne kabhi haar nahi maante.</p>
+</div>
+</div>
+
+<button onclick="showSurprise()">
+🎁 OPEN YOUR SPECIAL MESSAGE
+</button>
+
+<div id="surprise">
+<h2>🥂 KEEP SHINING MOKKHER!</h2>
+<p>Tumhari har subah ek nayi umeed lekar aaye, har din ek nayi kamyabi de aur har saal tumhe pehle se behtar banaye.</p>
+<p>❤️ HAPPY BIRTHDAY ONCE AGAIN! ❤️</p>
+</div>
+
+<div class="footer">
+Made With ❤️ & Best Wishes<br>
+STAY BLESSED • STAY STRONG • KEEP GROWING
+</div>
+
+</div>
+
+<script>
+function showSurprise(){
+document.getElementById("surprise").style.display="block";
+
+document.getElementById("surprise").scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+for(let i=0;i<50;i++){
+let b=document.createElement("div");
+b.className="balloon";
+b.innerHTML=["✨","🎉","🌟","💛","🎈"][Math.floor(Math.random()*5)];
+b.style.left=Math.random()*100+"vw";
+b.style.animationDuration=(3+Math.random()*4)+"s";
+document.body.appendChild(b);
+setTimeout(()=>b.remove(),8000);
+}
+}
+
+for(let i=0;i<30;i++){
+let s=document.createElement("div");
+s.className="spark";
+s.style.left=Math.random()*100+"vw";
+s.style.top=Math.random()*100+"vh";
+s.style.animationDelay=Math.random()*3+"s";
+document.body.appendChild(s);
+}
+
+setInterval(()=>{
+let b=document.createElement("div");
+b.className="balloon";
+b.innerHTML=["🎈","✨","💛"][Math.floor(Math.random()*3)];
+b.style.left=Math.random()*100+"vw";
+document.body.appendChild(b);
+setTimeout(()=>b.remove(),12000);
+},1000);
+</script>
+
+</body>
+</html>
+
